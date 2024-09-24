@@ -1,5 +1,5 @@
 # Getting Started
-Add something else here
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
