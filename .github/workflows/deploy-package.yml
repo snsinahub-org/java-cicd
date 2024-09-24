@@ -33,7 +33,7 @@ jobs:
         -DartifactId=javaJar \
         -Dversion=${{ inputs.version }} \
         -Dpackaging=jar \
-        -Dfile=target/web-app-1.1.1-SNAPSHOT.jar \
+        -Dfile=target/java-cicd-1.1.1-SNAPSHOT.jar \
         -DrepositoryId=github \
         -Durl=https://maven.pkg.github.com/snsinahub-org/java-cicd
       env:
