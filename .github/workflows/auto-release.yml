@@ -39,13 +39,6 @@ jobs:
       - name: 'print version'
         run: |
          echo ${{ steps.semver1.outputs.version }}
-  deploy:
-    needs: build
-    uses: ./.github/workflows/auto-deploy.yml
-    with:
-      environment: dev
-      release: ${{ needs.build.outputs.version_number }}
-
   
     
     
