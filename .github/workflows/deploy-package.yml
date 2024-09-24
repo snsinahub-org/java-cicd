@@ -10,7 +10,12 @@ on:
 jobs:    
   build-artifact:
     name: "build artifact"
-    runs-on: "ubuntu-latest"   
+    runs-on: "ubuntu-latest"  
+    
+    permissions:
+      contents: read
+      packages: write
+      deployments: write
     
     steps:
     - name: checkout
@@ -39,3 +44,4 @@ jobs:
       env:
          S_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          USERNAME: ${{ github.actor }}
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
