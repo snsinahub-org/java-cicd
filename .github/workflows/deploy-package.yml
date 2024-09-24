@@ -12,11 +12,6 @@ jobs:
     name: "build artifact"
     runs-on: "ubuntu-latest"  
     
-    permissions:
-      contents: read
-      packages: write
-      deployments: write
-    
     steps:
     - name: checkout
       uses: actions/checkout@v4
@@ -40,7 +35,7 @@ jobs:
         -Dpackaging=jar \
         -Dfile=target/web-app-1.1.1-SNAPSHOT.jar \
         -DrepositoryId=github \
-        -Durl=https://maven.pkg.github.com/${{ github.repository }}
+        -Durl=https://maven.pkg.github.com/sn-sinahub/java-cicd
       env:
          S_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          USERNAME: ${{ github.actor }}
