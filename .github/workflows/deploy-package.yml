@@ -30,7 +30,7 @@ jobs:
     - name: deploy maven to package
       run: |        
         mvn deploy:deploy-file -DgroupId=org.snsinahub \
-        -DartifactId=javaJar \
+        -DartifactId=javajar \
         -Dversion=${{ inputs.version }} \
         -Dpackaging=jar \
         -Dfile=target/java-cicd-1.1.1-SNAPSHOT.jar \
