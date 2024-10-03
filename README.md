@@ -40,3 +40,5 @@ The workflow consists of the following steps:
 - Set up Java
 - Build the application
 - publish maven package to GitHub Packages, this is done using the `mvn deploy` command and .m2/settings.xml file
+
+## Eternal links
