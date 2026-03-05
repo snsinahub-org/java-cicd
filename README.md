@@ -1,5 +1,8 @@
 # Automate Building and releasing a Spring Boot application to GitHub Releases using GitHub Actions
 
+
+
+
 This repository contains a simple Spring Boot application that is built and released to GitHub Releases using GitHub Actions. Also this repository contains a GitHub Actions workflow that is triggered manually and builds and releases the application to GitHub Packages.
 
 ## How it works
